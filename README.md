@@ -1,1 +1,1 @@
-# odinProject
+# The Odin Project Foundations
