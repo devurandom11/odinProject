@@ -8,7 +8,7 @@ Welcome to my GitHub project repo!
 
 ~~~bash
 g++ hello_world.cpp -o hello_world
-chmod+x hello_world
+chmod +x hello_world
 ./hello_world
 ~~~
 
