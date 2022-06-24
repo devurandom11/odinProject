@@ -1,24 +1,31 @@
 /* CSS Style sheet for Odin Recipe Site project */
 
 body {
-	background-color: rgba(214,0,255,.25);
-	font-family: "Lucida Console", "Fira Mono", monospace;
+	background-color: black;
+	background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+	font-family: Inconsolata, "Fira Mono", monospace;
+	text-shadow: 0 0 5px #c8c8c8;
 }
 
-.main-header,
-.subtitle,
-.quip {
-	text-align: center;	
+.header {
+	text-align: center;
 }
 
-#mainimage {
+.header3 {
+	color: #f3e600;
+}
+
+#skull {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
 	width: 300px;
 	height: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .link-list {
-	text-align: center;
+	text-shadow: none;
+	font-size: 12px;
+	list-style-type: square;
+	color: #148090
 }
