@@ -1,18 +1,63 @@
 /* CSS Style sheet for Odin Recipe Site project */
-
 body {
 	background-color: black;
 	background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
 	font-family: Inconsolata, "Fira Mono", monospace;
-	text-shadow: 0 0 5px #c8c8c8;
+	text-shadow: 0 0 2.5px yellow;
+}
+
+p {
+	text-shadow: none;
+	color: violet;
+}
+
+a {
+	text-shadow: none;
+	font-size: 14px;
+	list-style-type: square;
 }
 
 .header {
+	font-size: 48px;
 	text-align: center;
 }
 
-.header3 {
-	color: #f3e600;
+.header.main-header {
+	
+}
+
+.header.sub-header {
+	font-size: 36px;
+}
+
+.header.pun {
+	font-size: 24px;
+}
+
+.ingredients {
+	text-shadow: none;
+	color: violet;
+}
+
+.recipe {
+	text-shadow: none;
+	color: aqua;
+}
+
+
+
+.link-list {
+	text-shadow: none;
+	font-size: 14px;
+	list-style-type: square;
+}
+
+.congratulations {
+
+}
+
+.food {
+	width: 500px;
 }
 
 #skull {
@@ -25,7 +70,6 @@ body {
 
 .link-list {
 	text-shadow: none;
-	font-size: 12px;
+	font-size: 14px;
 	list-style-type: square;
-	color: #148090
 }
