@@ -17,6 +17,7 @@ a {
 	list-style-type: square;
 }
 
+/* Text classes below */ 
 .header {
 	font-size: 48px;
 	text-align: center;
@@ -44,8 +45,6 @@ a {
 	color: aqua;
 }
 
-
-
 .link-list {
 	text-shadow: none;
 	font-size: 14px;
@@ -56,8 +55,10 @@ a {
 
 }
 
+/* images below */ 
 .food {
 	width: 500px;
+	height: auto;
 }
 
 #skull {
@@ -68,6 +69,7 @@ a {
 	margin-right: auto;
 }
 
+/* links below */
 .link-list {
 	text-shadow: none;
 	font-size: 14px;
