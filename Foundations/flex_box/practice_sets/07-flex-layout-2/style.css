@@ -31,26 +31,38 @@ body {
   background: royalblue;
   flex-shrink: 0;
   font-size: 24px;
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  width: 300px;
+  padding: 14px;
+  margin: 12px;
 }
 
 .body-wrap {
   display: flex;
-  flex-grow: 1;
+  flex: 1;
 }
 
 .card-wrap {
   display: flex;
   flex-wrap: wrap;
+  padding: 32px;
+  gap: 16px;
 }
 
 ul, a {
   list-style-type: none;
   text-decoration: none;
   color: white;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding-bottom: 16px;
 }
