@@ -30,6 +30,7 @@ body {
   width: 300px;
   background: royalblue;
   flex-shrink: 0;
+  font-size: 24px;
 }
 
 .card {
@@ -46,4 +47,10 @@ body {
 .card-wrap {
   display: flex;
   flex-wrap: wrap;
+}
+
+ul, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
 }
