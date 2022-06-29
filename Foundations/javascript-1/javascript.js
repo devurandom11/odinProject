@@ -30,7 +30,7 @@ console.log("This message value should = Test: " + message);
 const FINAL_MESSAGE = "You can't change me!";
 
 // Throws an error when trying to reassign const value
-FINAL_MESSAGE = "I'll still try!";
+// FINAL_MESSAGE = "I'll still try!";
 
 // Use lowercase constants if value not known until runtime. For example
 const pageLoadTime = 'example'; // Time taken to load page
@@ -43,3 +43,5 @@ const pageLoadTime = 'example'; // Time taken to load page
 
 
 let name = "John";
+let admin = name;
+alert(admin)
