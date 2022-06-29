@@ -27,7 +27,7 @@ console.log("This message value should = Test: " + message)
 
 // Constants cannot be redifined and should be used when this is desired
 
-const final_message = "You can't change me!"
+const FINAL_MESSAGE = "You can't change me!"
 
 // Throws an error when trying to reassign const value
-final_message = "I'll still try!"
+FINAL_MESSAGE = "I'll still try!"
