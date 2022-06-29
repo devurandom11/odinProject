@@ -16,3 +16,11 @@ let message2 = 'Hello for the fourth time!'
 console.log(message2)
 
 
+// Declaring multiple variables
+
+let user = 'John', age=25, message3=('Hello ' + user);
+
+
+// Redefine a variable without the let keyword
+message = 'Test'
+console.log("This message value should = Test: " + message)
