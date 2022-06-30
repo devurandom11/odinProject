@@ -5,7 +5,7 @@ function greet() {
     const birthYear = prompt('What is your birth year? ');
     const currentYear = 2022;
     const age = currentYear - birthYear;
-    const greeting = alert(`Hello, ${name}! You are ${age} years old.`);
+    alert(`Hello, ${name}! You are ${age} years old.`);
 }
 
 // Syntax for calling a function on button click
