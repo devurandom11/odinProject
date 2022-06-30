@@ -25,9 +25,13 @@ function checkRange(num) {
     else if (num > 90) {
         console.log("Sorry, you are too old to enter :(");
     }
+    else {
+        alert("ERROR");
+    }
 }
 // Test cases
 checkRange(2);
 checkRange(14);
 checkRange(90);
 checkRange(91);
+checkRange("A"); // Should produce error alert
