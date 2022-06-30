@@ -9,14 +9,14 @@ if (user === "Admin") {
     if (password === "TheMaster") {
         alert("Welcome!");
     }
-    else if (password === ("" || "Esc")) {
+    else if (password == ("" || null)) {
         alert("Cancled");
     }
     else {
         alert("Wrong Password");
     }
 }
-else if (user === ("" || "Esc")) {
+else if (user == ("" || null)) {
     alert("Cancled");
 }
 else {
