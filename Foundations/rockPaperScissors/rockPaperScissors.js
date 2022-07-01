@@ -1,6 +1,8 @@
 // Design a game of Rock, Paper, Scissors between a player and the computer. The game should be played until one player reaches 5 points.
 
 // Set scores to 0
+let playerScore = 0;
+let computerScore = 0;
 
 // Play game function
 
