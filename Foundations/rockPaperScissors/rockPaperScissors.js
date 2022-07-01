@@ -8,6 +8,7 @@
 function main() {
     let playerScore = 0;
     let computerScore = 0;
+    const choice = ["rock", "paper", "scissors"];
     playGame();
 }  
 
