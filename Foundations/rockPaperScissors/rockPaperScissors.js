@@ -15,10 +15,11 @@ function playGame() {
     
     // Set scores to 0
     // Get computer random choice
+    computerChoice();
     // Get player choice
-
+    playerChoice();
     // Compare player choice to computer choice and select winner
-
+    
     // Add point to winner
 
     // Repeat play game function until one score === 5
@@ -33,6 +34,14 @@ function computerChoice() {
 // playerChoice function
 function playerChoice() {
 // Get player choice from a list of Rock, Paper, Scissors
+    let playerChoice =  prompt("Please enter Rock, Paper, or Scissors").toLowerCase();
+    console.log(test);
+    if (test !== "rock" && test !== "scissors" && test !== "paper") {
+        alert("You must select one of the three options!")
+        playerChoice();
+    } else {
+        return playerChoice;
+    }
 }
 
 // roundWinner function
