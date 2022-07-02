@@ -97,11 +97,6 @@ ol {
   font-size: 1.6em;
   background-color: #000000;
 }
-@media all and (max-width: 30em) {
-  a.button5 {
-    margin: 1.4em auto;
-  }
-}
 
 .footer {
   display: flex;
