@@ -6,6 +6,7 @@ const choices = ["rock", "paper", "scissors"];
 // Main function
 function main() {
   playGame();
+  console.log("Thank you for playing! Please refresh the page to play again.")
 }
 
 // Play game function
