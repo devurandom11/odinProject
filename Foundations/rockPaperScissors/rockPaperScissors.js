@@ -22,7 +22,7 @@ function playGame() {
     let winner = roundWinner(playerSelection, computerSelection);
 
     // Add point to winner
-    let [pScore, cScore] = addPoints(winner, playerScore, computerScore);
+    let [pScore, cScore] = addPoints(winner, playerScore, computerScore); // let [var, var] for defining more than one variable
     playerScore = pScore;
     computerScore = cScore;
     // Repeat play game function until one score === 5
@@ -97,7 +97,7 @@ function addPoints(winner, pScore, cScore) {
   } else if (winner === "computer") {
     return [pScore, (cScore += 1)];
   } else {
-    return [pScore, cScore];
+    return [pScore, cScore]; // [var, var] syntax for returning more than one value
   }
 }
 
