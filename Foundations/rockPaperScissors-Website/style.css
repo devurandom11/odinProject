@@ -12,6 +12,7 @@ body {
 a {
   text-decoration: none;
   color: rgb(255, 152, 179);
+  cursor: pointer;
 }
 
 ul,
@@ -87,6 +88,7 @@ ol {
   background-color: rgb(255, 152, 179);
   text-align: center;
   transition: all 0.15s;
+  cursor: pointer;
 }
 
 #play-game-btn:hover {
