@@ -57,7 +57,7 @@ function playerChoice() {
     playerSelection !== "paper"
   ) {
     alert("You must select one of the three options!");
-    playerChoice();
+    return playerChoice(); // return essential to make this not skip a score.
   } else {
     return playerSelection;
   }
