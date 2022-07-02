@@ -1,7 +1,5 @@
 // Design a game of Rock, Paper, Scissors between a player and the computer. The game should be played until one player reaches 5 points.
 
-// Design initial page layout
-
 // Page starts with "Play Game" button only. Pressing play game button starts game loop, removes "Play Game" button, and adds Rock, Paper, Scissors Images. Game continues until first player reaches 5 points.
 
 // Score is set to 0 and scoreboard outline is printed on screen.
