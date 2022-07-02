@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+ul, li, ol {
+    list-style-type: none;
+}
+
 a {
     text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-bar-right, .nav-bar-left {
+    display: flex;
+    gap: 10px;
 }
