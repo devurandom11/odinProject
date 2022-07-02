@@ -5,8 +5,6 @@ const choices = ["rock", "paper", "scissors"]
 
 // Main function
 function main() {
-    let playerScore = 0;
-    let computerScore = 0;
     playGame();
 }  
 
@@ -14,14 +12,20 @@ function main() {
 function playGame() {
     
     // Set scores to 0
+    let playerScore = 0;
+    let computerScore = 0
     // Get computer random choice
-    let copmuterSelection = choices[computerChoice()];
+    let computerSelection = choices[computerChoice()];
     // Get player choice
     let playerSelection = playerChoice();
     // Compare player choice to computer choice and select winner
-    console.log(`Complete! User choice is ${playerSelection} and computer choice is ${copmuterSelection}`);
+    let winner = roundWinner(playerSelection, computerSelection);
+    // Debugging
+    console.log(`Complete! User choice is ${playerSelection} and computer choice is ${computerSelection}`);
+    console.log(`The winner of this round is ${winner} and the points are: player=${playerScore} -- computer=${computerScore}`)
+    // End Debugging
     // Add point to winner
-
+    
     // Repeat play game function until one score === 5
 }
 
@@ -46,8 +50,30 @@ function playerChoice() {
 }
 
 // roundWinner function
-function roundWinner() {
+function roundWinner(player, computer) {
 // Compare computerChoice and playerChoice with switch statement
+    if (player === computer) {
+        alert("It's a tie");
+        return "none";
+    } else if (player === "rock" && computer === "paper") {
+        alert("The computer wins :(");
+        return "computer";
+    } else if (player === "rock" && computer === "scissors") {
+        alert("you win :)");
+        return "player";
+    } else if (player === "paper" && computer === "rock") {
+        alert("you win :)");
+        return "player";
+    } else if (player === "paper" && computer === "scissors") {
+        alert("The computer wins :(");
+        return "computer";
+    } else if (player === "scissors" && computer === "paper") {
+        alert("you win :)");
+        return "player"
+    } else if (player === "scissors" && computer === "paper") {
+        alert("The computer wins :(");
+        return "computer";
+    } 
 }
 
 // gameWinner function
