@@ -63,6 +63,7 @@ ol {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 1.4em;
   flex: 1;
 }
@@ -142,9 +143,9 @@ ol {
 }
 
 /* Border for visual inspection */
-section > *,
+/* section > *,
 footer > *,
 footer,
 section {
   border: 1px red solid;
-}
+} */
