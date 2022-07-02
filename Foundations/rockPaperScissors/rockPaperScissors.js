@@ -1,19 +1,19 @@
 // Design a game of Rock, Paper, Scissors between a player and the computer. The game should be played until one player reaches 5 points.
 
-// Set scores to 0
-
+// Declare constant array of choices
+const choices = ["rock", "paper", "scissors"]
 
 // Main function
-
 function main() {
     let playerScore = 0;
     let computerScore = 0;
-    const choice = ["rock", "paper", "scissors"];
     playGame();
 }  
 
 // Play game function
 function playGame() {
+    
+    // Set scores to 0
     // Get computer random choice
     // Get player choice
 
@@ -26,7 +26,8 @@ function playGame() {
 
 // computerChoice function
 function computerChoice() {
-// Get computer choice from a list of Rock, Paper, or Scissors at random
+// Get computer choice from a list of Rock, Paper, or Scissors at random.
+    return choices[(Math.floor(Math.random() * 3))];
 }
 
 // playerChoice function
@@ -44,3 +45,4 @@ function gameWinner() {
 // When playerScore || computerScore == 5; print that player as the winner and break out of playGame function.
 }
 
+main();
