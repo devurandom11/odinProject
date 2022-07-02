@@ -1,15 +1,17 @@
 /* Reset some styling */
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
-ul,li,ol{
+ul,
+li,
+ol {
   list-style-type: none;
 }
