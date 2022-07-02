@@ -15,11 +15,11 @@ function playGame() {
     
     // Set scores to 0
     // Get computer random choice
-    computerChoice();
+    let copmuterSelection = choices[computerChoice()];
     // Get player choice
-    playerChoice();
+    let playerSelection = playerChoice();
     // Compare player choice to computer choice and select winner
-    alert("complete");
+    console.log(`Complete! User choice is ${playerSelection} and computer choice is ${copmuterSelection}`);
     // Add point to winner
 
     // Repeat play game function until one score === 5
@@ -28,8 +28,8 @@ function playGame() {
 // computerChoice function
 function computerChoice() {
 // Get computer choice from a list of Rock, Paper, or Scissors at random.
-    let computerChoice = [(Math.floor(Math.random() * 3))];
-    return computerChoice;
+    let computerSelection = [(Math.floor(Math.random() * 3))];
+    return computerSelection;
 }
 
 // playerChoice function
