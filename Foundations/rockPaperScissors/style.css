@@ -1,27 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-ul, li, ol {
-    list-style-type: none;
+ul,
+li,
+ol {
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-}
-.header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
 }
 
-.nav-bar-right, .nav-bar-left {
-    display: flex;
-    gap: 10px;
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar-right,
+.nav-bar-left {
+  display: flex;
+  gap: 10px;
 }
