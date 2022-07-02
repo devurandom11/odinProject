@@ -14,7 +14,7 @@ function playGame() {
     // Set scores to 0
     let playerScore = 0;
     let computerScore = 0
-    while (playerScore < 6) {
+    while ((playerScore < 5) && (computerScore < 5)) {
         // Get computer random choice
         let computerSelection = choices[computerChoice()];
         // Get player choice
@@ -47,7 +47,6 @@ function computerChoice() {
 function playerChoice() {
 // Get player choice from a list of Rock, Paper, Scissors
     let playerSelection =  prompt("Please enter Rock, Paper, or Scissors").toLowerCase();
-    console.log(playerSelection);
     if (playerSelection !== "rock" && playerSelection !== "scissors" && playerSelection !== "paper") {
         alert("You must select one of the three options!")
         playerChoice();
