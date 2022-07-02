@@ -14,19 +14,26 @@ function playGame() {
     // Set scores to 0
     let playerScore = 0;
     let computerScore = 0
-    // Get computer random choice
-    let computerSelection = choices[computerChoice()];
-    // Get player choice
-    let playerSelection = playerChoice();
-    // Compare player choice to computer choice and select winner
-    let winner = roundWinner(playerSelection, computerSelection);
-    // Debugging
-    console.log(`Complete! User choice is ${playerSelection} and computer choice is ${computerSelection}`);
-    console.log(`The winner of this round is ${winner} and the points are: player=${playerScore} -- computer=${computerScore}`)
-    // End Debugging
-    // Add point to winner
+    while (playerScore < 6) {
+        // Get computer random choice
+        let computerSelection = choices[computerChoice()];
+        // Get player choice
+        let playerSelection = playerChoice();
+        // Compare player choice to computer choice and select winner
+        let winner = roundWinner(playerSelection, computerSelection);
+
+        // Add point to winner
+        let [pScore, cScore] = addPoints(winner, playerScore, computerScore);
+        playerScore = pScore;
+        computerScore = cScore;
+        // Repeat play game function until one score === 5
+
+        // Debugging
+        console.log(`Complete! User choice is ${playerSelection} and computer choice is ${computerSelection}`);
+        console.log(`The winner of this round is ${winner} and the points are: player=${playerScore} -- computer=${computerScore}`)
+        // End Debugging
+    }
     
-    // Repeat play game function until one score === 5
 }
 
 // computerChoice function
@@ -77,8 +84,15 @@ function roundWinner(player, computer) {
 }
 
 // gameWinner function
-function gameWinner() {
-// When playerScore || computerScore == 5; print that player as the winner and break out of playGame function.
-}
+function addPoints(winner, pScore, cScore) {
+    if (winner === "player"){
+        return [(pScore += 1), cScore];
+
+    } else if (winner === "computer"){
+        return [pScore, (cScore += 1)];
+    } else {
+        return [pScore, cScore];
+    }
+}      
 
 main();
