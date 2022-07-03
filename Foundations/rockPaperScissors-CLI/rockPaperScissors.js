@@ -1,12 +1,16 @@
 // Design a game of Rock, Paper, Scissors between a player and the computer. The game should be played until one player reaches 5 points.
 
+let displayCompScore = document.getElementById('computer-score');
+displayCompScore.innerHTML = "0";
+let displayPlayerScore = document.getElementById('player-score');
+displayPlayerScore.innerHTML = "0";
 // Declare constant array of choices
 const choices = ["rock", "paper", "scissors"];
 
 // Main function
 function main() {
     playGame();
-    console.log("Thank you for playing! Please refresh the page to play again.")
+    alert("Thank you for playing! Please refresh the page to play again.")
 }
 
 // Play game function
@@ -26,6 +30,12 @@ function playGame() {
         let [pScore, cScore] = addPoints(winner, playerScore, computerScore); // let [var, var] for defining more than one variable
         playerScore = pScore;
         computerScore = cScore;
+    
+        // Post score on screen
+        let displayCompScore = document.getElementById('computer-score');
+        displayCompScore.innerHTML = computerScore;
+        let displayPlayerScore = document.getElementById('player-score');
+        displayPlayerScore.innerHTML = playerScore;
         // Repeat play game function until one score === 5
 
         // Debugging

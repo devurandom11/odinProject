@@ -85,6 +85,7 @@ a:hover {
   gap: 2em;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  flex: 1;
 }
 
 /* center footer at bottom of the page and make it always visible */
