@@ -33,7 +33,8 @@ function setUpRound() {
 
 // Play Round Loop that runs until first player reaches 5 points
 function playRound() {
-  
+  computerChoice = computerChoices[Math.floor(Math.random() * 3)];
+  document.getElementById('rock-button').addEventListener("click", rock())
 }
 
 // Player
