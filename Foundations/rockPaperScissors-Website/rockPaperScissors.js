@@ -3,43 +3,52 @@
 const computerChoices = ["rock", "paper", "scissors"];
 let computerScore;
 let playerScore;
-
+let playerChoice;
+let computerChoice;
 // Page starts with "Play Game" button only. Pressing play game button starts game loop, removes "Play Game" button, and adds Rock, Paper, Scissors Images. Game continues until first player reaches 5 points.
 // document.getElementById("play-game-btn").addEventListener("click", playGame)
 // Score is set to 0 and scoreboard outline is printed on screen.
 function playGame() {
   computerScore = 0;
   playerScore = 0;
-  playRound();
+  setUpRound();
+  while (computerScore < 5 && playerScore < 5) {
+    playRound();
+  }
+  if (computerScore == 5 && playerScore == 5) {
+    tearDownGame();
+  }
+  playAgain();
 }
 
-// Player clicks any option and computer randomly selects an option.
-// Player
-function playRound() {
-  let playerChoice;
-  let computerChoice;
+// Triggered on Play Game click. Displays player choices.
+function setUpRound() {
   // Hide play game button
-  document.getElementById('play-game-btn').style.display='none';
+  document.getElementById("play-game-btn").style.display = "none";
   // Display player choice buttons
-  document.getElementById('rock-button').style.display='inline-block';
-  document.getElementById('paper-button').style.display="inline-block";
-  document.getElementById('scissors-button').style.display="inline-block";
-  // Player
-  // document.getElementById('rock-button').addEventListener("click", rock() {
-  //   playerChoice = "rock"
-  // })
-  // document.getElementById('rock-button').addEventListener("click", paper() {
-  //   playerChoice = "paper"
-  // })
-  // document.getElementById('rock-button').addEventListener("click", scissors(){
-  //   playerChoice = "scissors"
-  // })
-  // Computer
-  computerChoice = computerChoices[Math.floor(Math.random() * 3)];
-  alert(
-    `Player Choice: ${playerChoice} and Computer Choice: ${computerChoice}`
-  );
+  document.getElementById("rock-button").style.display = "inline-block";
+  document.getElementById("paper-button").style.display = "inline-block";
+  document.getElementById("scissors-button").style.display = "inline-block";
 }
+
+// Play Round Loop that runs until first player reaches 5 points
+function playRound() {
+  
+}
+
+// Player
+// document.getElementById('rock-button').addEventListener("click", rock() {
+//   playerChoice = "rock"
+// })
+// document.getElementById('rock-button').addEventListener("click", paper() {
+//   playerChoice = "paper"
+// })
+// document.getElementById('rock-button').addEventListener("click", scissors(){
+//   playerChoice = "scissors"
+// })
+// Computer
+// computerChoice = computerChoices[Math.floor(Math.random() * 3)];
+// alert(`Player Choice: ${playerChoice} and Computer Choice: ${computerChoice}`);
 
 // Winner for the round is chosen and 1 point is added to score. Tie means scores unchanged.
 
