@@ -6,12 +6,12 @@
 }
 
 body {
-  background: rgba(255, 152, 179, 0.25);
+  background: rgb(0,0,0);
 }
 
 a {
   text-decoration: none;
-  color: rgb(255, 152, 179);
+  color: rgb(3, 193, 218);
   cursor: pointer;
 }
 
@@ -38,7 +38,7 @@ ol {
 .links {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(255, 152, 178, 0.1);
+  background-color: rgb(243, 230, 0);
   border-radius: 1.4em;
   padding: 0px 1em 0px 0em;
 }
@@ -70,7 +70,7 @@ ol {
 }
 #ask-play {
   font-size: 2.4em;
-  color: blueviolet;
+  color: rgb(4, 218, 246);
   font-weight: 900;
   text-align: center;
   text-transform: uppercase;
@@ -83,9 +83,9 @@ ol {
   font-family: "Courier New", Courier, monospace;
   font-weight: 750;
   font-size: 1.4em;
-  color: aliceblue;
+  color: rgb(243, 230, 0);
   text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
-  background-color: rgb(255, 152, 179);
+  background-color: rgb(4, 218, 246);
   text-align: center;
   transition: all 0.15s;
   cursor: pointer;
@@ -93,24 +93,25 @@ ol {
 
 #play-game-btn:hover {
   text-shadow: 0 0 2em rgba(255, 255, 255, 1);
-  color: red;
-  border: 0.1em salmon solid;
+  color: rgb(4, 218, 246);
+  border: .1em rgb(4, 218, 246) solid;
   font-weight: 900;
   font-size: 1.6em;
-  background-color: #000000;
+  background-color: rgb(243, 230, 0);
 }
 
 .footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgb(255, 0, 60)
 }
 
 .footer > * {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 2em;
   text-align: center;
-  background-color: rgba(255, 152, 178, 1);
+  background-color: rgb(243, 230, 0);
   border-radius: 1.4em;
   padding: 10px 10px 10px 10px;
 }
