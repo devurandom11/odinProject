@@ -9,7 +9,7 @@
 }
 
 body {
-  background: rgb(0,0,0);
+  background: rgb(0, 0, 0);
 }
 
 a {
@@ -93,9 +93,9 @@ ol {
 }
 
 #play-game-btn:hover {
-  text-shadow: 0 0 2em rgba(255, 255, 255, 1);
+  text-shadow: 0 0 2em rgb(255, 255, 255);
   color: rgb(4, 218, 246);
-  border: .1em rgb(4, 218, 246) solid;
+  border: 0.1em rgb(4, 218, 246) solid;
   font-weight: 900;
   font-size: 1.6em;
   background-color: rgb(243, 230, 0);
@@ -105,7 +105,7 @@ ol {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: rgb(255, 0, 60)
+  color: rgb(255, 0, 60);
 }
 
 .footer > * {
@@ -125,15 +125,10 @@ ol {
   font-size: 1.4rem;
   background: linear-gradient(
     to right,
-    #ef5350,
-    #f48fb1,
-    #7e57c2,
-    #2196f3,
-    #26c6da,
-    #43a047,
-    #d4c704,
-    #f9a825,
-    #ff5722
+    rgb(243, 230, 0),
+    rgb(255, 0, 60),
+    rgb(4, 218, 246),
+    rgb(0, 0, 0)
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
