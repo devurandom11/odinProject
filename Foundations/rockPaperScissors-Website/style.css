@@ -31,6 +31,7 @@ ol {
   padding: 20px 20px 20px 20px;
 }
 
+
 .flex-wrapper {
   display: flex;
   flex-direction: column;
@@ -68,7 +69,7 @@ ol {
   align-items: center;
   justify-content: center;
   gap: 1.4em;
-  flex: 1;
+  padding-top: 100px;
 }
 #ask-play {
   font-size: 2.4em;
@@ -100,7 +101,17 @@ ol {
   font-size: 1.6em;
   background-color: rgb(243, 230, 0);
 }
-
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex: 1;
+  padding-top: 100px;
+}
+.player-scoreboard-header, .computer-scoreboard-header {
+  color:rgb(4, 218, 246)
+  }
+  
 .footer {
   display: flex;
   justify-content: center;
