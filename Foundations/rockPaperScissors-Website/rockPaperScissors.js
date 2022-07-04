@@ -5,17 +5,23 @@ let computerScore;
 let playerScore;
 
 // Page starts with "Play Game" button only. Pressing play game button starts game loop, removes "Play Game" button, and adds Rock, Paper, Scissors Images. Game continues until first player reaches 5 points.
-
+// document.getElementById("play-game-btn").addEventListener("click", playGame)
 // Score is set to 0 and scoreboard outline is printed on screen.
-computerScore = 0;
-playerScore = 0;
-// Player clicks any option and computer randomly selects an option.
-// Player
-let playerChoice = pass;
-// Computer
-let computerChoice = computerChoices[Math.floor(Math.random()*3)];
+function playGame() {
+  computerScore = 0;
+  playerScore = 0;
+  // Player clicks any option and computer randomly selects an option.
+  // Player
+  function playRound() {}
 
-// Winner for the round is chosen and 1 point is added to score. Tie means scores unchanged.
+  let playerChoice = "rock";
+  // Computer
+  let computerChoice = computerChoices[Math.floor(Math.random() * 3)];
+  alert(
+    `Player Choice: ${playerChoice} and Computer Choice: ${computerChoice}`
+  );
+  // Winner for the round is chosen and 1 point is added to score. Tie means scores unchanged.
+}
 
 // Score printed to screen. Record of choice selection printed to screen in column format:
 
