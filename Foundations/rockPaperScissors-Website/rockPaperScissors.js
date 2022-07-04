@@ -19,20 +19,21 @@ function playRound() {
   let playerChoice;
   let computerChoice;
   // Hide play game button
-  document.getElementById("play-game-btn").style.display='none';
+  document.getElementById('play-game-btn').style.display='none';
   // Display player choice buttons
-  document.getElementbyID("rock-button").style.display="inline-block";
-  document.getElementbyID("paper-button").style.display="inline-block";
-  document.getElementbyID("scissors-button").style.display="inline-block";
-
+  document.getElementById('rock-button').style.display='inline-block';
+  document.getElementById('paper-button').style.display="inline-block";
+  document.getElementById('scissors-button').style.display="inline-block";
   // Player
-  // if (document.getElementById("rock-button").clicked) {
-  //   playerChoice = "rock";
-  // } else if (document.getElementById("paper-button").clicked) {
-  //   playerChoice = "paper";
-  // } else {
-  //   playerChoice = "scissors";
-  // }
+  // document.getElementById('rock-button').addEventListener("click", rock() {
+  //   playerChoice = "rock"
+  // })
+  // document.getElementById('rock-button').addEventListener("click", paper() {
+  //   playerChoice = "paper"
+  // })
+  // document.getElementById('rock-button').addEventListener("click", scissors(){
+  //   playerChoice = "scissors"
+  // })
   // Computer
   computerChoice = computerChoices[Math.floor(Math.random() * 3)];
   alert(

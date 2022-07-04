@@ -31,7 +31,6 @@ ol {
   padding: 20px 20px 20px 20px;
 }
 
-
 .flex-wrapper {
   display: flex;
   flex-direction: column;
@@ -100,6 +99,7 @@ ol {
   font-weight: 900;
   font-size: 1.6em;
   background-color: rgb(243, 230, 0);
+  margin-bottom: 25px;
 }
 .scoreboard {
   display: flex;
@@ -108,10 +108,11 @@ ol {
   flex: 1;
   padding-top: 100px;
 }
-.player-scoreboard-header, .computer-scoreboard-header {
-  color:rgb(4, 218, 246)
-  }
-  
+.player-scoreboard-header,
+.computer-scoreboard-header {
+  color: rgb(4, 218, 246);
+}
+
 .footer {
   display: flex;
   justify-content: center;
@@ -145,6 +146,28 @@ ol {
   -webkit-text-fill-color: transparent;
 }
 
+.player-choice {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+#rock-button,
+#paper-button,
+#scissors-button {
+  display: none;
+  padding: 0.46em 1.6em;
+  border-radius: 1em;
+  font-weight: 750;
+  font-size: 1.4em;
+  color: rgb(243, 230, 0);
+  text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+  background-color: rgb(4, 218, 246);
+  text-align: center;
+  transition: all 0.15s;
+  cursor: pointer;
+}
 /* Border for visual inspection */
 /* section > *,
 footer > *,
