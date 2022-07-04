@@ -5,11 +5,7 @@ let computerScore;
 let playerScore;
 
 // Page starts with "Play Game" button only. Pressing play game button starts game loop, removes "Play Game" button, and adds Rock, Paper, Scissors Images. Game continues until first player reaches 5 points.
-function main(){
-  function startGame -> (e) {
 
-  } 
-}
 // Score is set to 0 and scoreboard outline is printed on screen.
 
 // Player clicks any option and computer randomly selects an option.
