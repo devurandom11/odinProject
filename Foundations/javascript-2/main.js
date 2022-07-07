@@ -30,3 +30,11 @@ container.appendChild(blueHeader);
 container.appendChild(innerDiv);
 innerDiv.appendChild(divHeader);
 innerDiv.appendChild(divP);
+
+// Get button element and display hello world when clicked
+const button = document.querySelector('#btn');
+button.onclick = () => alert("Hello World");
+
+// Get button element and display hello world when clicked
+const finalButton = document.querySelector('#best-btn');
+finalButton.addEventListener('click', () => alert("Hello World"));
