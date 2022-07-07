@@ -16,7 +16,7 @@ divP.classList.add('div-p');
 // Style elements
 pContent.style.color = "red";
 blueHeader.style.color = "blue";
-innerDiv.style.cssText = "border: black 1px solid; background-color: pink;";
+innerDiv.style.cssText = "border: black 1px solid; background-color: pink; margin: 10px; padding: 5px;";
 
 // Add content to elements
 pContent.textContent = "Hey I'm Red!";
@@ -25,3 +25,8 @@ divHeader.textContent = "I'm in a div";
 divP.textContent = "ME TOO!";
 
 // Append elements to page
+container.appendChild(pContent);
+container.appendChild(blueHeader);
+container.appendChild(innerDiv);
+innerDiv.appendChild(divHeader);
+innerDiv.appendChild(divP);
