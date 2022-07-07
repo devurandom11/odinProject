@@ -5,3 +5,15 @@ const blueHeader = document.createElement('h3');
 const innerDiv = document.createElement('div');
 const divHeader = document.createElement('h1');
 const divP = document.createElement('p');
+
+// Add classes to elements. Not neccessary but for practice.
+pContent.classList.add('red-p');
+blueHeader.classList.add('blue-h');
+innerDiv.classList.add('inner-div');
+divHeader.classList.add('div-header');
+divP.classList.add('div-p');
+
+// Style elements
+pContent.style.color = "red";
+blueHeader.style.color = "blue";
+innerDiv.style.cssText = "border: black 1px solid; background-color: pink;";
