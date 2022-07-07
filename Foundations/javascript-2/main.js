@@ -19,8 +19,9 @@ blueHeader.style.color = "blue";
 innerDiv.style.cssText = "border: black 1px solid; background-color: pink;";
 
 // Add content to elements
-pContent.textContent("Hey I'm Red!");
-blueHeader.textContent("I'm a blue h3!");
-divHeader.textContent("I'm in a div");
-divP.textContent("ME TOO!");
+pContent.textContent = "Hey I'm Red!";
+blueHeader.textContent = "I'm a blue h3!";
+divHeader.textContent = "I'm in a div";
+divP.textContent = "ME TOO!";
 
+// Append elements to page
